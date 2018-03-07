@@ -186,9 +186,9 @@ fastlane pgy
       一些报错处理：
  * ![(icon)](https://github.com/daniulaolu/Fastlane--Packaging/blob/master/error_resource/error__01.png)
  
- * ![(icon)](https://github.com/daniulaolu/Fastlane--Packaging/blob/master/error_resource/error__02.png)
+ * ![(icon)](https://github.com/daniulaolu/Fastlane--Packaging/blob/master/error_resource/error_02.png)
  
- * ![(icon)](https://github.com/daniulaolu/Fastlane--Packaging/blob/master/error_resource/error__03.png)
+ * ![(icon)](https://github.com/daniulaolu/Fastlane--Packaging/blob/master/error_resource/error_03.png)
  
  * ![(icon)](https://github.com/daniulaolu/Fastlane--Packaging/blob/master/error_resource/error_o4.png)
       
