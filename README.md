@@ -191,54 +191,10 @@ fastlane pgy
  * ![(icon)](https://github.com/daniulaolu/Fastlane--Packaging/blob/master/error_resource/error__03.png)
  
  * ![(icon)](https://github.com/daniulaolu/Fastlane--Packaging/blob/master/error_resource/error__04.png)
-      
- ### 6.将自己的项目打成tag
-   
-      因为cocoapods是依赖tag版本的,所以必须打tag,以后再次更新只需要把你的项目打一个tag，然后修改.podspec文件中的版本接着提交到cocoapods官方就可以了,提交命令请看下面
-    
-      在终端执行以下命令：为git打tag, 第一次需要在前面加一个v
-      
-```objc 
-git tag "v1.0.0" 
-      
-git push --tags
-```
-### 7.发布
-
-```objc 
-pod trunk push lujh.podspec
-```
-      时间较长，耐性等待，大概5-10分钟
       
-###8.测试自己的cocoapods
 
-     这个时候使用pod search搜索的话会提示搜索不到，可以执行以下命令更新本地search_index.json文件
+## AppStore版本的操作和上面流程一样，把Appfile和Fastfile文件修改成发布版本的配置
   
-```objc 
-rm ~/Library/Caches/CocoaPods/search_index.json
-```
-     然后
-     
-```objc 
-pod search lujhPrivate
-```
-
-## 完整命令
-
-```objc 
-pod trunk register example@example.com 'lujhPrivate'  --verbose
-pod trunk me
-pod spec create lujhPrivate
- 
-//编辑 lujhPrivate.podspec
- 
-pod spec lint lujhPrivate.podspec
-git tag "v1.0.0"
-git push --tags
-pod trunk push lujhPrivate.podspec 
-rm ~/Library/Caches/CocoaPods/search_index.json
-pod search lujhPrivate
-```
 
 ## My weixin
 ![(author)](https://github.com/daniulaolu/PushParameterWithDict-/blob/master/xiaolu.jpg)
