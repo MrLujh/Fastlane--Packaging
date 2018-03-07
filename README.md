@@ -36,30 +36,12 @@ fastlane init
 
 * ![(icon)](https://github.com/daniulaolu/Fastlane--Packaging/blob/master/fastlane%20init_resource/fastlane%20init_06.png)
 
-### 3.编辑.podspec
+### 2.蒲公英的Fastlane插件安装
       
-      按照上面的样式来编辑
+      打开终端，进入你的项目工程的根目录，输入以下命令：
       
 ```objc       
-s.name：名称，pod search搜索的关键词,注意这里一定要和.podspec的名称一样,否则报错
-s.version：版本号，to_s：返回一个字符串
-s.author:作者
-s.homepage:项目主页地址
-s.summary: 项目简介
-s.source:项目源码所在地址
-s.license:许可证
-s.platform:项目支持平台
-s.requires_arc: 是否支持ARC
-s.source_files:需要包含的源文件
-s.public_header_files:需要包含的头文件
-s.ios.deployment_target:支持的pod最低版本
-其他一些非必要字段
-
-s.social_media_url:社交网址
-s.resources:资源文件
-s.dependency:依赖库，不能依赖未发布的库
-s.license= { :type => “MIT”, :file => “LICENSE” }
-这里建议这样写,如果写别的会报警告,导致后面一直提交失败
+fastlane add_plugin pgyer
 ```
 
 ### 4.验证.podspec
