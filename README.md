@@ -4,31 +4,17 @@
 ## 安装不在这里详细罗列，参照一下链接流程
 *  https://www.jianshu.com/p/0a113f754c09
 
-## podspec文件
+
+
+## 操作步骤
+
+
+### 1.检查Fastlane是否正确安装。输入以下命令：
+
 ```objc
-* Pod::Spec.new do |s|
-* s.name        = 'lujhPrivate'
-* s.version     = '1.0.4'
-* s.authors     = { 'daniulaolu' => '287929070@qq.com' }
-* s.homepage    = 'https://github.com/daniulaolu/lujhPrivate'
-* s.summary     = 'a dropdown menu for ios like wechat homepage.'
-* s.source      = { :git => 'https://github.com/daniulaolu/lujhPrivate.git',
-* :tag => s.version.to_s }
-* s.license     = { :type => "MIT", :file => "LICENSE" }
-* s.platform = :ios, '7.0'
-* s.requires_arc = true
-* s.source_files = "lujhPrivate", "*.{h,m}"
-* s.resource     = 'lujhPrivate/lujh.bundle'
-* s.ios.deployment_target = '7.0'
-* s.frameworks   =  'QuartzCore', 'Security', 'UIKit', 'Foundation', 'CoreGraphics','CoreTelephony'
-* s.dependency 'SAMKeychain'
-* end
+fastlane --version
 ```
-## 制作方法
-
-### 1.写好代码，上传到github
-
-      //github上创建项目仓库的时候记得创建LICENSE(许可证/授权)文件,此文件必须要有
+      //可以看到Fastlane版本信息，我的是fastlane 2.84.0
       
 ### 2.创建.podspec
 
