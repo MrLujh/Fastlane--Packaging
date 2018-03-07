@@ -16,12 +16,12 @@ fastlane --version
 ```
       //可以看到Fastlane版本信息，我的是fastlane 2.84.0
       
-### 2.创建.podspec
+### 2.打开终端，进入你的项目工程的根目录，输入以下命令
 
       cd到你项目的目录,执行命令
       
 ```objc       
-pod spec create lujhPrivate
+fastlane init
 ```
 
 ### 3.编辑.podspec
