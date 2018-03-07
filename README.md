@@ -175,6 +175,12 @@ end
 
 ```
 
+* pgyer(api_key: "1303c11160b475cc56b9d5df820a17ed", user_key: "dd705842c35567b3f2620e6a047024f0"),
+  在蒲谷英开发平台配置中查看
+  
+  
+* ![(icon)](https://github.com/daniulaolu/Fastlane--Packaging/blob/master/error_resource/error_o4.png)
+
 ### 4.在终端执行自动打包 
 
      在终端输入
@@ -190,9 +196,7 @@ fastlane pgy
  
  * ![(icon)](https://github.com/daniulaolu/Fastlane--Packaging/blob/master/error_resource/error_03.png)
  
- * ![(icon)](https://github.com/daniulaolu/Fastlane--Packaging/blob/master/error_resource/error_o4.png)
-      
-
+ 
 ## AppStore版本的操作和上面流程一样，把Appfile和Fastfile文件修改成发布版本的配置
   
 
