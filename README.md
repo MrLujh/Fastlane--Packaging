@@ -44,6 +44,11 @@ fastlane init
 fastlane add_plugin pgyer
 ```
 
+* ![(icon)](https://github.com/daniulaolu/Fastlane--Packaging/blob/master/fastlane%20add_plugin_resource/fastlane%20add_plugin_01.png)
+
+* 这里执行完就可以了
+* ![(icon)](https://github.com/daniulaolu/Fastlane--Packaging/blob/master/fastlane%20add_plugin_resource/fastlane%20add_plugin_02.png)
+
 ### 4.验证.podspec
 
       到此检查一下你工程中有以下文件：
