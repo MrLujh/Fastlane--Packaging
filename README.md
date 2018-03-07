@@ -174,23 +174,14 @@ end
 # No personal data is recorded. Learn more at https://github.com/fastlane/enhancer
 
 ```
-### 5.trunk需要CocoaPods 
 
+### 4.在终端执行自动打包 
+
+     在终端输入
 ```objc 
-pod trunk me
+fastlane pgy
 ```
-      若未注册，执行以下命令，邮箱以及用户名请对号入座。用户名我使用的是Github上的用户名。
- 
-```objc
- // 加上--verbose可以输出详细错误信息，方便出错时查看。
-      
-pod trunk register example@example.com 'lujhPrivate'  --verbose
-```
-
-      注册完成之后会给你的邮箱发个邮件,进入邮箱邮件里面有个链接,需要点击确认一下。
-      
-      注册完成后使用pod trunk me检验注册是否成功
-      
+      
  ### 6.将自己的项目打成tag
    
       因为cocoapods是依赖tag版本的,所以必须打tag,以后再次更新只需要把你的项目打一个tag，然后修改.podspec文件中的版本接着提交到cocoapods官方就可以了,提交命令请看下面
