@@ -3,14 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>SchemeUserState</key>
+	<dict/>
+	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>Pods-Fastlane--Packaging.xcscheme</key>
+		<key>ABFF95FAD05E5A67FBFF8CB262DDFF4F</key>
 		<dict>
-			<key>isShown</key>
-			<false/>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
-	<key>SuppressBuildableAutocreation</key>
-	<dict/>
 </dict>
 </plist>
