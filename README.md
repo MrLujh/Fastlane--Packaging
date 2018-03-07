@@ -49,6 +49,8 @@ fastlane add_plugin pgyer
 * 这里执行完就可以了
 * ![(icon)](https://github.com/daniulaolu/Fastlane--Packaging/blob/master/fastlane%20add_plugin_resource/fastlane%20add_plugin_02.png)
 
+
+
 ### 3.配置Appfile和Fastfile文件 --这里手动配置，直接复制代码就可以了，把里面的配置改成自己的项目
 
  
