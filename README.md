@@ -1,8 +1,8 @@
 ## Fastlane--Packaging
 * 自动化打包，通过fastlane自动发布
 
-## Fastlane --安装不在这里详细罗列，参照网上的流程
-https://www.jianshu.com/p/0a113f754c09
+## 安装不在这里详细罗列，参照一下链接流程
+*  https://www.jianshu.com/p/0a113f754c09
 
 ## podspec文件
 ```objc
