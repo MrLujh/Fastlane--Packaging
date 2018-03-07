@@ -190,7 +190,7 @@ fastlane pgy
  
  * ![(icon)](https://github.com/daniulaolu/Fastlane--Packaging/blob/master/error_resource/error__03.png)
  
- * ![(icon)](https://github.com/daniulaolu/Fastlane--Packaging/blob/master/error_resource/error__04.png)
+ * ![(icon)](https://github.com/daniulaolu/Fastlane--Packaging/blob/master/error_resource/error_o4.png)
       
 
 ## AppStore版本的操作和上面流程一样，把Appfile和Fastfile文件修改成发布版本的配置
