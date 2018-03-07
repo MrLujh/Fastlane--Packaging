@@ -14,7 +14,7 @@
 		2E119137204FD922009B0E3F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E119135204FD922009B0E3F /* LaunchScreen.storyboard */; };
 		2E11913A204FD922009B0E3F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E119139204FD922009B0E3F /* main.m */; };
 		2E119144204FD922009B0E3F /* Fastlane__PackagingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E119143204FD922009B0E3F /* Fastlane__PackagingTests.m */; };
-		2E11914F204FD922009B0E3F /* Fastlane__PackagingUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E11914E204FD922009B0E3F /* Fastlane__PackagingUITests.m */; };
+		CB9E2FE3BAEF389C041331B2 /* libPods-Fastlane--Packaging.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 278C6F97247B820368B2B727 /* libPods-Fastlane--Packaging.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,16 +25,10 @@
 			remoteGlobalIDString = 2E119126204FD921009B0E3F;
 			remoteInfo = "Fastlane--Packaging";
 		};
-		2E11914B204FD922009B0E3F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2E11911F204FD921009B0E3F /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 2E119126204FD921009B0E3F;
-			remoteInfo = "Fastlane--Packaging";
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		278C6F97247B820368B2B727 /* libPods-Fastlane--Packaging.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Fastlane--Packaging.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E119127204FD921009B0E3F /* Fastlane--Packaging.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fastlane--Packaging.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E11912A204FD921009B0E3F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2E11912B204FD921009B0E3F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -48,9 +42,8 @@
 		2E11913F204FD922009B0E3F /* Fastlane--PackagingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Fastlane--PackagingTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E119143204FD922009B0E3F /* Fastlane__PackagingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Fastlane__PackagingTests.m; sourceTree = "<group>"; };
 		2E119145204FD922009B0E3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2E11914A204FD922009B0E3F /* Fastlane--PackagingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Fastlane--PackagingUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2E11914E204FD922009B0E3F /* Fastlane__PackagingUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Fastlane__PackagingUITests.m; sourceTree = "<group>"; };
-		2E119150204FD922009B0E3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		73AC94400E67FBBE97BD059F /* Pods-Fastlane--Packaging.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fastlane--Packaging.release.xcconfig"; path = "Pods/Target Support Files/Pods-Fastlane--Packaging/Pods-Fastlane--Packaging.release.xcconfig"; sourceTree = "<group>"; };
+		AA33D06CCC2CEBB4BB9A7486 /* Pods-Fastlane--Packaging.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fastlane--Packaging.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Fastlane--Packaging/Pods-Fastlane--Packaging.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,17 +51,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB9E2FE3BAEF389C041331B2 /* libPods-Fastlane--Packaging.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		2E11913C204FD922009B0E3F /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2E119147204FD922009B0E3F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -83,8 +70,9 @@
 			children = (
 				2E119129204FD921009B0E3F /* Fastlane--Packaging */,
 				2E119142204FD922009B0E3F /* Fastlane--PackagingTests */,
-				2E11914D204FD922009B0E3F /* Fastlane--PackagingUITests */,
 				2E119128204FD921009B0E3F /* Products */,
+				743582E2C54C29D8603E4EA4 /* Pods */,
+				3574A6A6591BD126F554D450 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -93,7 +81,6 @@
 			children = (
 				2E119127204FD921009B0E3F /* Fastlane--Packaging.app */,
 				2E11913F204FD922009B0E3F /* Fastlane--PackagingTests.xctest */,
-				2E11914A204FD922009B0E3F /* Fastlane--PackagingUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -123,13 +110,21 @@
 			path = "Fastlane--PackagingTests";
 			sourceTree = "<group>";
 		};
-		2E11914D204FD922009B0E3F /* Fastlane--PackagingUITests */ = {
+		3574A6A6591BD126F554D450 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				2E11914E204FD922009B0E3F /* Fastlane__PackagingUITests.m */,
-				2E119150204FD922009B0E3F /* Info.plist */,
+				278C6F97247B820368B2B727 /* libPods-Fastlane--Packaging.a */,
 			);
-			path = "Fastlane--PackagingUITests";
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		743582E2C54C29D8603E4EA4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AA33D06CCC2CEBB4BB9A7486 /* Pods-Fastlane--Packaging.debug.xcconfig */,
+				73AC94400E67FBBE97BD059F /* Pods-Fastlane--Packaging.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,9 +134,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2E119153204FD922009B0E3F /* Build configuration list for PBXNativeTarget "Fastlane--Packaging" */;
 			buildPhases = (
+				1729409415BCA731A60E2C01 /* [CP] Check Pods Manifest.lock */,
 				2E119123204FD921009B0E3F /* Sources */,
 				2E119124204FD921009B0E3F /* Frameworks */,
 				2E119125204FD921009B0E3F /* Resources */,
+				FB71AC1C9395DBFBE97B48DC /* [CP] Embed Pods Frameworks */,
+				C5134023C7ED4A63D387CDBA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -170,24 +168,6 @@
 			productReference = 2E11913F204FD922009B0E3F /* Fastlane--PackagingTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		2E119149204FD922009B0E3F /* Fastlane--PackagingUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 2E119159204FD922009B0E3F /* Build configuration list for PBXNativeTarget "Fastlane--PackagingUITests" */;
-			buildPhases = (
-				2E119146204FD922009B0E3F /* Sources */,
-				2E119147204FD922009B0E3F /* Frameworks */,
-				2E119148204FD922009B0E3F /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				2E11914C204FD922009B0E3F /* PBXTargetDependency */,
-			);
-			name = "Fastlane--PackagingUITests";
-			productName = "Fastlane--PackagingUITests";
-			productReference = 2E11914A204FD922009B0E3F /* Fastlane--PackagingUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -199,14 +179,9 @@
 				TargetAttributes = {
 					2E119126204FD921009B0E3F = {
 						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					2E11913E204FD922009B0E3F = {
-						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
-						TestTargetID = 2E119126204FD921009B0E3F;
-					};
-					2E119149204FD922009B0E3F = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 2E119126204FD921009B0E3F;
@@ -228,7 +203,6 @@
 			targets = (
 				2E119126204FD921009B0E3F /* Fastlane--Packaging */,
 				2E11913E204FD922009B0E3F /* Fastlane--PackagingTests */,
-				2E119149204FD922009B0E3F /* Fastlane--PackagingUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -251,14 +225,58 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2E119148204FD922009B0E3F /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1729409415BCA731A60E2C01 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Fastlane--Packaging-checkManifestLockResult.txt",
+			);
 			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
 		};
-/* End PBXResourcesBuildPhase section */
+		C5134023C7ED4A63D387CDBA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Fastlane--Packaging/Pods-Fastlane--Packaging-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FB71AC1C9395DBFBE97B48DC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Fastlane--Packaging/Pods-Fastlane--Packaging-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2E119123204FD921009B0E3F /* Sources */ = {
@@ -279,14 +297,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2E119146204FD922009B0E3F /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2E11914F204FD922009B0E3F /* Fastlane__PackagingUITests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -294,11 +304,6 @@
 			isa = PBXTargetDependency;
 			target = 2E119126204FD921009B0E3F /* Fastlane--Packaging */;
 			targetProxy = 2E119140204FD922009B0E3F /* PBXContainerItemProxy */;
-		};
-		2E11914C204FD922009B0E3F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 2E119126204FD921009B0E3F /* Fastlane--Packaging */;
-			targetProxy = 2E11914B204FD922009B0E3F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -428,26 +433,36 @@
 		};
 		2E119154204FD922009B0E3F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA33D06CCC2CEBB4BB9A7486 /* Pods-Fastlane--Packaging.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 9M422A22FH;
 				INFOPLIST_FILE = "Fastlane--Packaging/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.lujh.Fastlane--Packaging";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zidongdabao.cn;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "eae9806e-e069-4a7d-ab60-b0d0a67562de";
+				PROVISIONING_PROFILE_SPECIFIER = zidong;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		2E119155204FD922009B0E3F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 73AC94400E67FBBE97BD059F /* Pods-Fastlane--Packaging.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 9M422A22FH;
 				INFOPLIST_FILE = "Fastlane--Packaging/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.lujh.Fastlane--Packaging";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zidongdabao.cn;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "eae9806e-e069-4a7d-ab60-b0d0a67562de";
+				PROVISIONING_PROFILE_SPECIFIER = zidong;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -480,32 +495,6 @@
 			};
 			name = Release;
 		};
-		2E11915A204FD922009B0E3F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Fastlane--PackagingUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.lujh.Fastlane--PackagingUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "Fastlane--Packaging";
-			};
-			name = Debug;
-		};
-		2E11915B204FD922009B0E3F /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Fastlane--PackagingUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.lujh.Fastlane--PackagingUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "Fastlane--Packaging";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -532,15 +521,6 @@
 			buildConfigurations = (
 				2E119157204FD922009B0E3F /* Debug */,
 				2E119158204FD922009B0E3F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		2E119159204FD922009B0E3F /* Build configuration list for PBXNativeTarget "Fastlane--PackagingUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				2E11915A204FD922009B0E3F /* Debug */,
-				2E11915B204FD922009B0E3F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
