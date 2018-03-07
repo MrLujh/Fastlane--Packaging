@@ -181,7 +181,17 @@ end
 ```objc 
 fastlane pgy
 ```
-      
+
+ 
+      一些报错处理：
+ * ![(icon)](https://github.com/daniulaolu/Fastlane--Packaging/blob/master/error_resource/error__01.png)
+ 
+ * ![(icon)](https://github.com/daniulaolu/Fastlane--Packaging/blob/master/error_resource/error__02.png)
+ 
+ * ![(icon)](https://github.com/daniulaolu/Fastlane--Packaging/blob/master/error_resource/error__03.png)
+ 
+ * ![(icon)](https://github.com/daniulaolu/Fastlane--Packaging/blob/master/error_resource/error__04.png)
+      
  ### 6.将自己的项目打成tag
    
       因为cocoapods是依赖tag版本的,所以必须打tag,以后再次更新只需要把你的项目打一个tag，然后修改.podspec文件中的版本接着提交到cocoapods官方就可以了,提交命令请看下面
