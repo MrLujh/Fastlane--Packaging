@@ -1,11 +1,7 @@
 
+#--发布蒲公英上的版本配置
+
 for_lane :pgy do
   app_identifier "com.zidongdabao.cn" # The bundle identifier of your app
-  apple_id "lu287929070@163.com" # Your Apple email address
-  # team_id "9M422A22FH" # Developer Portal Team ID
-
-  
+  apple_id "lu287929070@163.com" # Your Apple email address 
 end
-
-# For more information about the Appfile, see:
-#     https://docs.fastlane.tools/advanced/#appfile
