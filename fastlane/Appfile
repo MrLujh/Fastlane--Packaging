@@ -5,3 +5,10 @@ for_lane :pgy do
   app_identifier "com.zidongdabao.cn" # The bundle identifier of your app
   apple_id "lu287929070@163.com" # Your Apple email address 
 end
+
+#--发布AppStore上的版本配置
+for_lane :appstore do
+  app_identifier "com.zidongdabao.cn" # The bundle identifier of your app
+  apple_id "lu287929070@163.com" # Your Apple email address
+  team_id "9M422A22FH" # Developer Portal Team ID 必须有team_id
+end

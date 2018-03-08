@@ -31,7 +31,7 @@ lane :release do
 end
 
 # 以下是发布版本的配置
-
+#--发布蒲公英上的版本配置
 lane :pgy do
     
 sigh(
@@ -56,5 +56,29 @@ gym(
 pgyer(api_key: "1303c11160b475cc56b9d5df820a17ed", user_key: "dd705842c35567b3f2620e6a047024f0")
 
 end
+
+#--发布AppStore上的版本配置
+lane :appstore do
+    sigh(
+        app_identifier: "com.zidongdabao.cn"
+    )
+   
+    gym(
+    scheme: “Fastlane--Packaging”,
+    configuration: "Release",
+    silent: true,
+    clean: true,
+    workspace: "Fastlane--Packaging.xcworkspace",
+    include_bitcode: false,
+    output_directory: ‘./appstore’,
+    output_name: "Fastlane--Packaging.ipa",
+    export_xcargs: "-allowProvisioningUpdates”,
+    )
+    deliver(
+      submit_for_review: false,
+      skip_screenshots: true,
+      skip_metadata: true
+    )
+  end
 
 end

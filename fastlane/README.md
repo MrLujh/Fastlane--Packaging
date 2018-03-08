@@ -36,6 +36,11 @@ fastlane ios release
 fastlane ios pgy
 ```
 
+### ios appstore
+```
+fastlane ios appstore
+```
+
 
 ----
 
