@@ -72,21 +72,7 @@ end
 
 ```objc
 
-# Customise this file, documentation can be found here:
-# https://github.com/fastlane/fastlane/tree/master/fastlane/docs
-# All available actions: https://docs.fastlane.tools/actions
-# can also be listed using the `fastlane actions` command
-
-# Change the syntax highlighting to Ruby
-# All lines starting with a # are ignored when running `fastlane`
-
-# If you want to automatically update fastlane if a new version is available:
-# update_fastlane
-
-# This is the minimum version number required.
-# Update this, if you use features of a newer version
-fastlane_version "2.38.0"
-
+# 定义打包平台
 default_platform :ios
 
 platform :ios do
@@ -94,84 +80,58 @@ platform :ios do
     git_pull
     last_git_commit
     sh "rm -f ./Podfile.lock"
-    # cocoapods
-    cocoapods(use_bundle_exec: false)
+       cocoapods(use_bundle_exec: false)
 
-  end
-
-  desc "Runs all the tests"
-  lane :test do
-    scan
-  end
-
-  desc "Submit a new Beta Build to Apple TestFlight"
-  desc "This will also make sure the profile is up to date"
-  lane :beta do
-    # match(type: "appstore") # more information: https://codesigning.guide
-    gym # Build your app - more options available
-    pilot
-
-    # sh "your_script.sh"
-    # You can also use other beta testing services here (run `fastlane actions`)
-  end
-
-  desc "Deploy a new version to the App Store"
-  lane :release do
-    # match(type: "appstore")
-    # snapshot
-    gym # Build your app - more options available
-    deliver(force: true)
-    # frameit
-  end
-
-  # You can define as many lanes as you want
-
-  lane :pgy do
-    sigh(
-        app_identifier: "com.zidongdabao.cn"
-    )
-    
-    increment_build_number
-#     increment_build_number(
-#   build_number: “1” # set a specific number
-# )
-    gym(
-    scheme: “privateExemple”,
-    configuration: "Release",
-    silent: true,
-    clean: true,
-    workspace: "privateExemple.xcworkspace",
-    include_bitcode: false,
-    output_directory: './pgy',
-    output_name: "privateExemple.ipa",
-    export_xcargs: "-allowProvisioningUpdates”,
-    )
-
-    pgyer(api_key: "1303c11160b475cc56b9d5df820a17ed", user_key: "dd705842c35567b3f2620e6a047024f0")
-  end
-
-  after_all do |lane|
-    # This block is called, only if the executed lane was successful
-
-    # slack(
-    #   message: "Successfully deployed new App Update."
-    # )
-  end
-
-  error do |lane, exception|
-    # slack(
-    #   message: exception.message,
-    #   success: false
-    # )
-  end
 end
 
+# 运行所有的测试
+  lane :test do
+    scan
+end
 
-# More information about multiple platforms in fastlane: https://github.com/fastlane/fastlane/blob/master/fastlane/docs/Platforms.md
-# All available actions: https://docs.fastlane.tools/actions
+# 提交一个新的Beta版本
+# 确保配置文件是最新的
+lane :beta do
+   
+    gym 
+    pilot 
+end
 
-# fastlane reports which actions are used
-# No personal data is recorded. Learn more at https://github.com/fastlane/enhancer
+# 将新版本部署到应用程序商店
+lane :release do
+   
+    gym 
+    deliver(force: true) 
+end
+
+# 以下是发布版本的配置
+
+lane :pgy do
+    
+sigh(
+        app_identifier: "com.zidongdabao.cn" #项目的bundle identifler
+    )
+
+# 开始打包    
+gym(
+     
+    scheme: “Fastlane--Packaging”, #指定项目的scheme名称
+    configuration: "Release", # 指定打包方式，Release 或者 Debug
+    silent: true, # 隐藏没有必要的信息
+    clean: true, # 是否清空以前的编译信息 true：是
+    workspace: "Fastlane--Packaging.xcworkspace",
+    include_bitcode: false, #项目中的bitcode 设置
+    output_directory: './pgy', # 指定输出文件夹
+    output_name: "Fastlane--Packaging.ipa", #输出的ipa名称
+    export_xcargs: "-allowProvisioningUpdates”, #忽略文件
+    )
+
+# 开始上传蒲公英
+pgyer(api_key: "1303c11160b475cc56b9d5df820a17ed", user_key: "dd705842c35567b3f2620e6a047024f0")
+
+end
+
+end
 
 ```
 
