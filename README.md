@@ -199,7 +199,7 @@ fastlane pgy
  
      打包发布成功如下：
  
- * ![(icon)](https://github.com/daniulaolu/Fastlane--Packaging/blob/master/fastlane%20init_resource/fastlane%20init_06.png)
+ * ![(icon)](https://github.com/daniulaolu/Fastlane--Packaging/blob/master/fastlane%20init_resource/fastlane%20init_07.png)
  
  
 ## AppStore版本的操作和上面流程一样，把Appfile和Fastfile文件修改成发布版本的配置
