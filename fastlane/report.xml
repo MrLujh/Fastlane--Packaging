@@ -5,47 +5,42 @@
     
     
       
-      <testcase classname="fastlane.lanes" name="0: Verifying fastlane version" time="0.002316">
+      <testcase classname="fastlane.lanes" name="0: default_platform" time="0.00176">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="1: default_platform" time="0.001408">
+      <testcase classname="fastlane.lanes" name="1: git_pull" time="2.430416">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="2: git_pull" time="3.0917">
+      <testcase classname="fastlane.lanes" name="2: last_git_commit" time="0.08186">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="3: last_git_commit" time="0.079348">
+      <testcase classname="fastlane.lanes" name="3: rm -f ./Podfile.lock" time="0.008903">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="4: rm -f ./Podfile.lock" time="0.00736">
+      <testcase classname="fastlane.lanes" name="4: cocoapods" time="4.40551">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="5: cocoapods" time="2.403224">
+      <testcase classname="fastlane.lanes" name="5: sigh" time="16.2533">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="6: sigh" time="15.194429">
+      <testcase classname="fastlane.lanes" name="6: gym" time="11.878398">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="7: gym" time="12.173214">
-        
-      </testcase>
-    
-      
-      <testcase classname="fastlane.lanes" name="8: pgyer" time="3.456977">
+      <testcase classname="fastlane.lanes" name="7: pgyer" time="2.02231">
         
       </testcase>
     
