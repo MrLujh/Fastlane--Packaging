@@ -164,6 +164,21 @@ fastlane pgy
  
 ## AppStore版本的操作和上面流程一样，把Appfile和Fastfile文件修改成发布版本的配置
   
+## fatlane --命令说明
+
+    # scan -- 自动运行测试工具，并且可以生成漂亮的HTML报告
+    # 证书，配置文件
+    # cert -- 自动创建管理iOS代码签名证书
+    # sigh -- 一声叹息啊，这么多年和Provisioning Profile战斗过无数次。总是有这样那样的问题导致配置文件过期或者失效。sigh是用来创建、更新、下载、    修复Provisioning Profile的工具。
+    # pem -- 自动生成、更新推送配置文件
+    # match -- 一个新的证书和配置文件管理工具。我会另写一篇文章专门介绍这个工具。他会所有需要用到的证书传到git私有库上，任何需要配置的机器直接用match同步回来就不用管证书问题了，小团队福音啊！   
+    # 编译
+    # gym -- Fastlane家族的自动化编译工具，和其他工具配合的非常默契
+    # 发布
+    # produce -- 如果你的产品还没在iTunes Connect(iTC)或者Apple Developer Center(ADC)建立，produce可以自动帮你完成这些工作
+    # deliver -- 自动上传截图，APP的元数据，二进制(ipa)文件到iTunes Connect
+    # TestFlight管理
+    # pilot -- 管理TestFlight的测试用户，上传二进制文件
 
 ## My weixin
 ![(author)](https://github.com/daniulaolu/PushParameterWithDict-/blob/master/xiaolu.jpg)
