@@ -4,7 +4,7 @@
 ![Mou icon](https://github.com/daniulaolu/Fastlane--Packaging/blob/master/packaging.gif)
 
 
-## 安装不在这里详细罗列，参照一下链接流程
+## Fastlane安装不在这里详细罗列，参照一下链接流程
 *  https://www.jianshu.com/p/0a113f754c09
 
 
