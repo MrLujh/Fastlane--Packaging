@@ -39,6 +39,8 @@ fastlane init
 
 * ![(icon)](https://github.com/daniulaolu/Fastlane--Packaging/blob/master/fastlane%20init_resource/fastlane%20init_06.png)
 
+* fastlane init  也可以不执行 直接把fastlane整个文件夹拷贝到新的项目中 Appfile和Fastfile配置成自己的项目就可以了-----fastlane init只是生成一些配置文件
+
 ### 2.蒲公英的Fastlane插件安装
       
       打开终端，进入你的项目工程的根目录，输入以下命令：
